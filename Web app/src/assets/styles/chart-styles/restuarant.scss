@@ -1,0 +1,55 @@
+.res_button_div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 3rem;
+    width: 80%;
+}
+.res_prev {
+    color: #9A073D;
+}
+.res_next {
+    color: #10245b;
+}
+.res_title {
+    display: flex;
+    text-align: center;
+    margin: 0rem 1rem 5rem;
+    color: #0B245B;
+}
+.res_title h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.res_border_style{
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    padding: 6px;
+    -webkit-box-shadow: 2px 2px 19px 0px rgba(47, 50, 50, 0.68);
+    -moz-box-shadow: 2px 2px 19px 0px rgba(47, 50, 50, 0.68);
+    box-shadow: 2px 2px 19px 0px rgba(47, 50, 50, 0.68);
+}
+.right_restaurant {
+    text-align: center;
+    padding: 5.5rem 0 0;
+}
+
+.try_us_button{
+    outline: none !important;
+    border: none;
+    background: #1b4091;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+.try_us_button:hover {
+    background: white;
+    color: #0B245B;
+    border: 2.5px solid #9A073C;
+}

@@ -1,0 +1,18 @@
+.social_button_div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 3rem;
+    width: 80%;
+}
+.social_prev {
+    color: #9A073D;
+}
+.social_next {
+    color: #10245b;
+}
+.right_social_media {
+    position: absolute;
+    bottom: 14rem;
+    text-align: center;
+    left: 0;
+}

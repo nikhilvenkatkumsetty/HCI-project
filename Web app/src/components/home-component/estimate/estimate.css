@@ -1,0 +1,78 @@
+.est_home_img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.estimate_main {
+  font-family: "Poppins", sans-serif !important;
+  margin: 50px auto;
+  background: #f9faf5;
+  padding: 95px 100px;
+}
+.h2_card {
+  display: flex;
+  justify-content: center;
+  color: #a0073c;
+  padding: 0rem;
+}
+
+.blue_bottom_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.blue_bottom {
+  width: 50px;
+  height: 2.5px;
+  background-color: #0b245b;
+}
+.card_content {
+  display: flex;
+  justify-content: center;
+  color: #0b245b;
+  padding-top: 4.5rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.estimate_num {
+  font-size: 45px;
+}
+
+.estimate_data {
+  font-size: 22px;
+  margin: auto 3px;
+  padding-top: 11px;
+}
+.card_estimate_transform:hover{
+  animation-name: moveInTop;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0.25;
+    transform: translateY(0); }
+  /* 80% {
+    transform: translateX(1rem); } */
+  100% {
+    opacity: 1;
+    transform: translateY(-15px); } }
+
+
+@media (max-width:440px) {
+  .estimate_main {
+    padding: inherit;
+  }
+  .estimate_mob {
+    margin: auto;
+  }
+  .col_estimate_mob {
+    margin: 30px auto 15px;
+  }
+}
+
+
+
+
+    /* {/* ,margin:"auto",marginBottom: "25px"  }/ */

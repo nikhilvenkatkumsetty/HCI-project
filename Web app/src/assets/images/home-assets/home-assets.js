@@ -1,0 +1,1 @@
+// all home component assets goes in this folder..

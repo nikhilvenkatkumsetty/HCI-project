@@ -1,0 +1,86 @@
+/* all category related scss styles goes in this file.. */
+
+.about_wrapper {
+    background: #f2f2f2;
+    padding: 2rem;
+    .about_headwrap {
+      display: flex;
+      justify-content: center;
+      & > div {
+        font-size: 26px;
+        font-weight: 600;
+        color: #9b1c3c;
+        line-height: 1.3;
+      }
+    }
+    .about_container {
+      padding-top: 2rem;
+      .about_row {
+        margin: auto auto auto 0;
+        width: 80%;
+        .about_rowDiv {
+          display: flex;
+          width: 85%;
+          justify-content: space-between;
+          padding: 1rem 0;
+          .about_content {
+            width: 65%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            margin: auto 0;
+            color: #828282;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+            .about_content_pink {
+              color: #9b1c3c;
+            }
+            .about_content_blue {
+              color: #224496;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .second_block {
+    margin-left: 9rem;
+  }
+  
+  .third_block {
+    margin-left: 18rem;
+  }
+  
+  .fourth_block {
+    margin-left: 27rem;
+  }
+  
+  @media(max-width:1200px){
+    .second_block {
+      margin-left: 0rem !important;
+    }
+    
+    .third_block {
+      margin-left: 0rem !important;
+    }
+    
+    .fourth_block {
+      margin-left: 0rem !important;
+    }
+    .about_wrapper .about_container .about_row {
+      margin: auto;
+      width: 100% !important;
+  }
+  .about_wrapper .about_container .about_row .about_rowDiv {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .about_wrapper {
+    background: #f2f2f2;
+    padding: 1rem !important;
+  }
+  }

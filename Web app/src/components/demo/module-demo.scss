@@ -1,0 +1,36 @@
+.butt_com {
+    display: flex;
+    justify-content: center;
+}
+.demo_retail img {
+    width: 50px;
+}
+.demo_media img {
+    width: 50px;
+}
+.demo_advertising img {
+    width: 50px;
+}
+.butt_com button {
+    background: rgb(146, 57, 57);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 200px;    
+}
+.demo_retail{
+  padding: 35px 45px;
+}
+.demo_media{
+  padding: 35px 45px;
+}
+.demo_advertising{
+  padding: 35px 20px;
+}
+.comm_demo_span {
+    position: relative;
+    top: 16px;
+    font-size: 17px;
+    left: -10px;
+    letter-spacing: 2px;
+}

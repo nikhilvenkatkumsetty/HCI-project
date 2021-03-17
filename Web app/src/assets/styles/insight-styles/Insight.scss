@@ -1,0 +1,138 @@
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 8.5rem;
+}
+
+.rwt__tabs[data-rwt-vertical="false"] {
+  display: flex;
+}
+
+.rwt__tablist:not([aria-orientation="horizontal"]) {
+  // border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rwt__tablist[aria-orientation="horizontal"] {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-right: 1px solid #ddd;
+  margin-right: 1rem;
+}
+
+.rwt__tab {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.25rem 5rem;
+  transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.rwt__tab[aria-selected="false"]:hover,
+.rwt__tab:focus {
+  outline: 0;
+  // background-color: red;
+}
+
+.rwt__tab[aria-selected="true"] {
+  position: relative;
+}
+
+.rwt__tab[aria-selected="true"]:after {
+  content: "";
+  position: absolute;
+}
+
+.rwt__tablist:not([aria-orientation="horizontal"])
+  .rwt__tab[aria-selected="true"]:after {
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #9b1c3d;
+}
+
+.rwt__tablist[aria-orientation="horizontal"]
+  .rwt__tab[aria-selected="true"]:after {
+  right: -1px;
+  top: 0;
+  height: 100%;
+  border: 3px solid #9b1c3d;
+}
+
+
+
+.insightdrop1_heading{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #10245b;
+    font-family: "Poppins", sans-serif;  
+    padding: 3rem 0 4rem 0;
+}
+.tab1row {
+  padding: 4rem 0;
+  & > .tabcol1 {
+    padding-left: 59px;
+    & > div {
+      text-align: left;
+      & > a {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 2;
+        color: #10245b;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  & > .tabcol2 {
+    margin: auto;
+  }
+}
+.element_retail:hover {
+  background: rgb(240, 235, 235);
+  color: #9b1c3d;
+}
+.element_retail {
+  padding-left: 20px;
+  width: 85%;
+}
+.rwt__tab[aria-selected="true"] {
+  position: relative;
+  width: 16rem;
+  color: #9b1c3d;
+  // font-size: 15px;
+  letter-spacing: 1px;
+}
+.tabs {
+  position: relative;
+  width: 16rem;
+  color: #9b1c3d;
+  // font-size: 15px;
+  letter-spacing: 1px;
+}
+
+@media (max-width:425px) {
+  .mob_tab1 {
+    margin-left: 20rem;
+  }
+  .mob_tablist {
+    overflow-x: overlay;
+    /* margin-left: -1rem; */
+    overflow-y: hidden;
+  }
+  .element_retail {
+    padding-left: 20px;
+    width: auto;
+    margin-bottom: 19px;
+}
+.tab1row > .tabcol1 {
+  padding-left: 0px;
+}
+.tab1row > .tabcol1 > div > a {
+  line-height: 1.5;
+}
+}

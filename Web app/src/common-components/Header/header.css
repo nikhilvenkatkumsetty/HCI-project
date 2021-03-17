@@ -1,0 +1,120 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+.header-box-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    margin-top: 0px;
+}
+
+.fixedheader{
+  position: fixed;
+  top: 0;
+  height: 90px;
+  width: 101%;
+  background: #F8F8F8;
+  padding: 10px;
+  z-index: 9999;
+  opacity: 0.9;
+  transition:background 0.5s ease;
+  margin: auto;
+}
+ .compny-name {
+     color: #0B245B;
+     font-size: 25px;
+     font-weight: 550;
+     text-shadow: 4px 4px 4px #c2c1c1;
+     cursor: pointer;
+     
+    }
+.header-tabs {
+  margin-top: 16px;
+  margin-bottom: auto;
+  display: flex;
+  padding-bottom: 33px;
+}
+.head-comp {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 15.7px;
+  font-weight: 490;
+  margin-top: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  margin-top: 11px;
+}
+.demo-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-top: 6px;
+  margin-bottom: 13px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  outline: none !important;
+  border: none;
+  background: #0B245B;
+  color: #F8F8F8;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  text-transform: capitalize;
+  top: 6px;
+}
+.drop-left-content{
+  padding: 20px;
+  font-size: 17px;
+}
+.drop-left-head1{
+  font-size: 25px;
+}
+.demo-btn:hover {
+    background: white;
+    color: #0B245B;
+    border: 2.5px solid #9A073C;
+}
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-2px); }
+    /* 80% {
+      transform: translateX(1rem); } */
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+.head-comp:hover {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.one {
+    width: 37px;
+    height: 5px;
+    background-color: #717171;
+    margin: 6px 0;
+  }
+  .two {
+    width: 26px;
+    height: 5px;
+    background-color: #717171;
+    margin: 6px 0;
+  }
+  .three {
+    width: 16px;
+    height: 5px;
+    background-color: #717171;
+    margin: 6px 0;
+  }
+.ham-contanier {
+    margin: auto 0;
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+}

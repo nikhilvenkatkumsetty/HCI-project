@@ -1,0 +1,8 @@
+.leaflet-container {
+    height: 69vh;
+    width: 100%;
+  }
+.leaflet-control-attribution {
+    box-shadow: none;
+    display: none;
+}
