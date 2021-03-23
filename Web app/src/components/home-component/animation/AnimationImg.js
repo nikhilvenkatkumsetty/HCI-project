@@ -35,10 +35,10 @@ function AnimationImg(props) {
  
    series.data = [  
       {  
-         "name":"Unstructured Data",
+         "name":"Gestures",
          "value":170,
          "linkWith":[  
-            "Social Feeds"
+            "Motion Capture"
          ],
          "children":[  
             {  
@@ -60,12 +60,12 @@ function AnimationImg(props) {
          ]
       },
       {  
-         "name":"Social Feeds",
+         "name":"Motion Capture",
          "value":170,
          "linkWith":[  
-            "Location",
-            "Web Data",
-            "Satellite Feeds"
+            "Recognition",
+            "Tracking",
+            "Alphanumeric"
          ],
          "children":[  
             {  
@@ -83,12 +83,12 @@ function AnimationImg(props) {
          ]
       },
       {  
-         "name":"Web Data",
+         "name":"Tracking",
          "value":170,
          "linkWith":[  
-         "Inventory",
-            "Social Feeds",
-            "Satellite Data"
+         "Gestures",
+            "Motion Capture",
+            "Availability"
          ],
          "children":[  
             {  
@@ -103,12 +103,12 @@ function AnimationImg(props) {
          ]
       },
       {  
-         "name":"Satellite Data",
+         "name":"Availability",
          "value":175,
          "linkWith":[  
-         "Inventory",
-            "Web Data",
-            "Social Feeds"
+         "Gestures",
+            "Tracking",
+            "Motion Capture"
          ],
          "children":[  
             {  
@@ -122,29 +122,12 @@ function AnimationImg(props) {
          ]
       },
       {  
-         "name":"Transactions",
-         "value":175,
-         "linkWith":[  
-         "Inventory",
-            "Web Data",
-            "Social Feeds",
-            "Video Feeds"
-         ],
-         "children":[  
-            {  
-               "value":-70,
-               "image":wallet
-            },
-         ]
-      },
-      {  
-         "name":"Location Indicators",
+         "name":"Recognition",
          "value":200,
          "linkWith":[  
-         "Inventory",
-            "Web Data",
-            "Social Feeds",
-            "Transactions"
+         "Gestures",
+            "Tracking",
+            "Motion Capture"
          ],
          "children":[  
                            { 
@@ -243,11 +226,11 @@ export default AnimationImg;
     // series.tooltipText = "{valueY.value}";
    //  series.data = [  
    //    {  
-   //       "name":"Location Indicators",
+   //       "name":"Recognition Indicators",
    //       "value":250,
    //       "image":facebook,
    //       "linkWith":[  
-   //          "Social Feeds"
+   //          "Motion Capture"
    //       ],
    //       "children":[  
    //          {  
@@ -256,13 +239,13 @@ export default AnimationImg;
    //       ]
    //    },
    //    {  
-   //       "name":"Social Feeds",
+   //       "name":"Motion Capture",
    //       "value":250,
    //       "image":instagram,
    //       "linkWith":[  
-   //          "Location",
+   //          "Recognition",
          
-   //          "Satellite Feeds"
+   //          "Alphanumeric"
    //       ],
    //       "children":[  
    //          {  
@@ -274,13 +257,13 @@ export default AnimationImg;
    //       ]
    //    },
    //    {  
-   //       "name":"Web Data",
+   //       "name":"Tracking",
    //       "value":250,
    //       "image":api,
    //       "linkWith":[  
    //       "Inventory",
-   //          "Social Feeds",
-   //          "Satellite Data"
+   //          "Motion Capture",
+   //          "Availability"
    //       ],
    //       "children":[  
    //          {  
@@ -295,7 +278,7 @@ export default AnimationImg;
    //       ]
    //    },
    //    {  
-   //       "name":"Satellite Data",
+   //       "name":"Availability",
    //       "value":250,
    //       // "image":footfall,
    //       "linkWith":[  
@@ -317,8 +300,8 @@ export default AnimationImg;
    //       // "image":rss,
    //       "linkWith":[  
    //       "Inventory",
-   //          "Web Data",
-   //          "Social Feeds",
+   //          "Tracking",
+   //          "Motion Capture",
    //          "Video Feeds"
    //       ],
    //       "children":[  
@@ -348,8 +331,8 @@ export default AnimationImg;
          
    //       "linkWith":[  
    //       "Inventory",
-   //          "Web Data",
-   //          "Social Feeds",
+   //          "Tracking",
+   //          "Motion Capture",
    //          "Transactions"
    //       ],
    //       "children":[  
@@ -364,7 +347,7 @@ export default AnimationImg;
    //       "image":youtube,
    //       "linkWith":[  
    //       "Inventory",
-   //          "Web Data",
+   //          "Tracking",
             
    //       ],
    //       "children":[  
@@ -380,7 +363,7 @@ export default AnimationImg;
    //       "linkWith":[  
    //       "Inventory",
             
-   //          "Social Feeds",
+   //          "Motion Capture",
    //          "Transactions"
    //       ],
    //       "children":[  
