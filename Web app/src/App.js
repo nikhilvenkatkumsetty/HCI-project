@@ -53,7 +53,7 @@ function App() {
     <Router history={customHistory}>
     <Drift
   appId="g2itx3x3khki"
-  attributes={{ email: "nikhilvenkat26@gmail.com", company: "airrecog.in" }}
+  attributes={{ email: "kumsettynikhilvenkat.181it224@nitk.edu.in", company: "airrecog.in" }}
 />
       <Header setopen={setopen} open={open}/>
       <Switch>
