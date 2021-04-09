@@ -3,9 +3,10 @@ from keras import backend as K
 from collections import deque
 import numpy as np
 import cv2 
+import tensorflow as tf
 
-def air_write():
-    K.clear_session() 
+def digit_recog():
+    K.clear_session()
     # Load the models built in the previous steps
     mlp_model = load_model('mnist_models/mnist_mlp_model.h5')
     cnn_model = load_model('mnist_models/mnist_cnn_model.h5')
@@ -110,12 +111,10 @@ def air_write():
 
         # If the 'q' key is pressed, stop the loop
         if cv2.waitKey(1) & 0xFF == ord("q"):
+            tf.reset_default_graph()
             K.clear_session()
             break
 
     # Cleanup the camera and close any open windows
     camera.release()
     cv2.destroyAllWindows()
-
-if __name__ == "__main__":
-    air_write()

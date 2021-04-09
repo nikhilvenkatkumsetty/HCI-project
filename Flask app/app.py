@@ -1,8 +1,9 @@
 from flask import Flask,render_template,request, redirect, url_for
 import flask
 from flask.helpers import flash
-from digits_recognition import air_write
+from digits_recognition import digit_recog
 from alphabet_recognition import alpha_recog
+from keras import backend as K
 
 app = Flask(__name__)
 
@@ -12,12 +13,14 @@ def index():
 
 @app.route("/digit")
 def digit():
-    air_write()
+    alpha_recog()
+    K.clear_session()
     return flask.redirect("/")
 
 @app.route("/alphabet")
 def alphabet():
     alpha_recog()
+    K.clear_session()
     return flask.redirect("/")
 
 if(__name__=="__main__"):

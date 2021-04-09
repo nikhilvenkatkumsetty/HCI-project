@@ -3,11 +3,11 @@ from keras import backend as K
 from collections import deque
 import numpy as np
 import cv2
-
+import tensorflow as tf
 
 def alpha_recog():
  #Load the models built in the previous steps
-    K.clear_session()
+    #K.clear_session()
     mlp_model = load_model('emnist_models/emnist_mlp_model.h5')
     cnn_model = load_model('emnist_models/emnist_cnn_model.h5')
 
@@ -40,7 +40,6 @@ def alpha_recog():
 
     # Keep looping
     while True:
-        K.clear_session()
         # Grab the current paintWindow
         (grabbed, frame) = camera.read()
         frame = cv2.flip(frame, 1)
@@ -116,9 +115,11 @@ def alpha_recog():
 
         # If the 'q' key is pressed, stop the loop
         if cv2.waitKey(1) & 0xFF == ord("q"):
-            K.clear_session()
+           # tf.reset_default_graph()
+            #K.clear_session()
             break
 
     # Cleanup the camera and close any open windows
     camera.release()
     cv2.destroyAllWindows()
+
