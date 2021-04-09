@@ -122,11 +122,7 @@ def alpha_recog():
     # Cleanup the camera and close any open windows
     camera.release()
     cv2.destroyAllWindows()
-<<<<<<< HEAD
-
-=======
     return "q"
 
 if __name__ == "__main__":
     alpha_recog()
->>>>>>> 5167a41a9d8628fbd1e6b6451729292662b8b4ef
