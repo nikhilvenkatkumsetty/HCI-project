@@ -19,9 +19,9 @@ def digit():
 
 @app.route("/alphabet")
 def alphabet():
-    alpha_recog()
-    K.clear_session()
-    return flask.redirect("/")
+    val = alpha_recog()
+    if val == "q":
+        return flask.redirect("/")
 
 if(__name__=="__main__"):
     app.run(debug=True)
