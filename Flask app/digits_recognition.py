@@ -118,3 +118,4 @@ def digit_recog():
     # Cleanup the camera and close any open windows
     camera.release()
     cv2.destroyAllWindows()
+    return "q"
