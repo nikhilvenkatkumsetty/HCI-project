@@ -31,7 +31,7 @@ const Header = ({open, setopen}) => {
   let history = useHistory();
 
   const redirect = () => {
-    history.push('https://gdelt-datalytix.herokuapp.com/')
+    history.push('http://limitless-tundra-16978.herokuapp.com/')
   };
 
   const [toggle1,settoggle1] = useState(false);
@@ -173,7 +173,8 @@ const Header = ({open, setopen}) => {
           >
             Demo
           </button></Link> */}
-          <button onClick={event =>  window.location.href='https://gdelt-datalytix.herokuapp.com/'} className="head-comp demo-btn">Demo</button>
+          <button onClick={event =>  window.location.href='http://limitless-tundra-16978.herokuapp.com/'} className="head-comp demo-btn">Demo</button>
+          <button onClick={event =>  window.location.href='https://www.surveymonkey.com/r/FB752RP'} className="head-comp demo-btn">Feedback</button>
         </div>
         <div className="ham-contanier" onClick={() => setShowNav(true)}>
           <div class="one"></div>
